@@ -222,7 +222,7 @@ Para **comparar un elemento o atributo con un string o pasarlo a una función qu
 // Seguimos con el string xml del ejemplo anterior
 // Nuevo objeto SimpleXMLElement al que se le pasa el string xml
 $usuarios = new SimpleXMLElement($string);
-if((string) $usuarios->usuario->nombre == 'Monnie') {
+if(($string) $usuarios->usuario->nombre == 'Monnie') {
     echo 'El usuario es efectivamente Monnie';
 } else {
     echo 'El usuario NO es Monnie';
